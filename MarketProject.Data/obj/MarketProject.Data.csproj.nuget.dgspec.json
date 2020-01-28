@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj": {}
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj": {
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj",
+        "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj",
         "projectName": "MarketProject.Data",
-        "projectPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj",
+        "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Data\\obj\\",
+        "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,6 +43,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.1, )"

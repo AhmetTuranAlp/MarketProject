@@ -783,6 +783,16 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
+      "MarketProject.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MarketProject.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MarketProject.Common.dll": {}
+        }
+      },
       "MarketProject.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -3384,6 +3394,11 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "MarketProject.Common/1.0.0": {
+      "type": "project",
+      "path": "../MarketProject.Common/MarketProject.Common.csproj",
+      "msbuildProject": "../MarketProject.Common/MarketProject.Common.csproj"
+    },
     "MarketProject.Data/1.0.0": {
       "type": "project",
       "path": "../MarketProject.Data/MarketProject.Data.csproj",
@@ -3398,6 +3413,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper >= 6.0.2",
+      "MarketProject.Common >= 1.0.0",
       "MarketProject.DTO >= 1.0.0",
       "MarketProject.Data >= 1.0.0"
     ]
@@ -3410,11 +3426,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Service\\MarketProject.Service.csproj",
+      "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Service\\MarketProject.Service.csproj",
       "projectName": "MarketProject.Service",
-      "projectPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Service\\MarketProject.Service.csproj",
+      "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Service\\MarketProject.Service.csproj",
       "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Service\\obj\\",
+      "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -3435,11 +3451,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj"
+            "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Common\\MarketProject.Common.csproj": {
+              "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Common\\MarketProject.Common.csproj"
             },
-            "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.DTO\\MarketProject.DTO.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.DTO\\MarketProject.DTO.csproj"
+            "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj": {
+              "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj"
+            },
+            "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.DTO\\MarketProject.DTO.csproj": {
+              "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.DTO\\MarketProject.DTO.csproj"
             }
           }
         }

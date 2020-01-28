@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MarketProject.Data.Repositories
 {
-    public interface IRepository<TEntity>
+    public interface IRepository<TEntity> where TEntity : class
     {
         /// <summary>
         ///  Tüm modeli çekmektedir.

@@ -1,4 +1,5 @@
-﻿using MarketProject.Data.UnitOfWork;
+﻿using MarketProject.Data.Repositories;
+using MarketProject.Data.UnitOfWork;
 using MarketProject.DTO.Entities;
 using MarketProject.Service.Interfaces;
 using System;
@@ -11,22 +12,19 @@ namespace MarketProject.Service
     public class UserService : BaseService, IUserService
     {
         private readonly IUnitOfWork _unitOfWork;
-
-        #region Constructor
-        public UserService(IUnitOfWork unitOfWork)
+        private readonly IRepository<User> _userRepository;
+        public UserService(IUnitOfWork unitOfWork, IRepository<User> repository)
         {
             _unitOfWork = unitOfWork;
+            _userRepository = repository;
         }
-
-        private Data.Repositories.IRepository<User> _userRepository
+        
+        public User Login(string userName, string password)
         {
-            get
-            {
-                return _unitOfWork.GetRepository<User>();
-            }
+            var user = _userRepository.GetAll().FirstOrDefault(x => x.UserName == userName && x.Password == password);
+            var dtoUser = Map<User>(user);
+            return dtoUser;
         }
-        #endregion
-
 
         public void Create(User entity)
         {
@@ -114,7 +112,9 @@ namespace MarketProject.Service
             GC.SuppressFinalize(this);
         }
 
-    
+       
+
+
 
         #endregion
     }

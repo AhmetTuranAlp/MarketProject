@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.DTO\\MarketProject.DTO.csproj",
+      "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.DTO\\MarketProject.DTO.csproj",
       "projectName": "MarketProject.DTO",
-      "projectPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.DTO\\MarketProject.DTO.csproj",
+      "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.DTO\\MarketProject.DTO.csproj",
       "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.DTO\\obj\\",
+      "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.DTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

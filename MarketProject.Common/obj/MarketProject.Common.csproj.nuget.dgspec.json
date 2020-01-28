@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Common\\MarketProject.Common.csproj": {}
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Common\\MarketProject.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Common\\MarketProject.Common.csproj": {
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Common\\MarketProject.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Common\\MarketProject.Common.csproj",
+        "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Common\\MarketProject.Common.csproj",
         "projectName": "MarketProject.Common",
-        "projectPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Common\\MarketProject.Common.csproj",
+        "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Common\\MarketProject.Common.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Common\\obj\\",
+        "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

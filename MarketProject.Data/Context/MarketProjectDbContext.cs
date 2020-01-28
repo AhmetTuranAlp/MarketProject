@@ -6,9 +6,9 @@ using System.Text;
 
 namespace MarketProject.Data.Context
 {
-    public class SuperMarketProjectDbContext : DbContext
+    public class MarketProjectDbContext : DbContext
     {
-        public SuperMarketProjectDbContext(DbContextOptions<SuperMarketProjectDbContext> options) : base(options)
+        public MarketProjectDbContext(DbContextOptions<MarketProjectDbContext> options) : base(options)
         {
 
         }

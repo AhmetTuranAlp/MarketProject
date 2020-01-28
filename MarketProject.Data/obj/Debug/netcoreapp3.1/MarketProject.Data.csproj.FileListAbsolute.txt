@@ -6,3 +6,11 @@ C:\Users\ahmet\source\repos\MarketProject\MarketProject.Data\obj\Debug\netcoreap
 C:\Users\ahmet\source\repos\MarketProject\MarketProject.Data\bin\Debug\netcoreapp3.1\MarketProject.Data.pdb
 C:\Users\ahmet\source\repos\MarketProject\MarketProject.Data\obj\Debug\netcoreapp3.1\MarketProject.Data.dll
 C:\Users\ahmet\source\repos\MarketProject\MarketProject.Data\obj\Debug\netcoreapp3.1\MarketProject.Data.pdb
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\bin\Debug\netcoreapp3.1\MarketProject.Data.deps.json
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\bin\Debug\netcoreapp3.1\MarketProject.Data.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\bin\Debug\netcoreapp3.1\MarketProject.Data.pdb
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\obj\Debug\netcoreapp3.1\MarketProject.Data.csprojAssemblyReference.cache
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\obj\Debug\netcoreapp3.1\MarketProject.Data.AssemblyInfoInputs.cache
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\obj\Debug\netcoreapp3.1\MarketProject.Data.AssemblyInfo.cs
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\obj\Debug\netcoreapp3.1\MarketProject.Data.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\obj\Debug\netcoreapp3.1\MarketProject.Data.pdb

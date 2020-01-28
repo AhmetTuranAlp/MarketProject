@@ -13,7 +13,7 @@ namespace MarketProject.Data.Repositories
         private readonly DbContext _context;
         private readonly DbSet<TEntity> _dbSet;
 
-        public Repository(SuperMarketProjectDbContext context)
+        public Repository(MarketProjectDbContext context)
         {
             _context = context;
             _dbSet = context.Set<TEntity>();

@@ -10,11 +10,11 @@ namespace MarketProject.Data.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private SuperMarketProjectDbContext _dbContext;
+        private MarketProjectDbContext _dbContext;
         private Dictionary<Type, object> _repositories = new Dictionary<Type, object>();
 
 
-        public UnitOfWork(SuperMarketProjectDbContext dbContext)
+        public UnitOfWork(MarketProjectDbContext dbContext)
         {
             //Database.SetInitializer<SuperMarketProjectDbContext>(null);
             _dbContext = dbContext;

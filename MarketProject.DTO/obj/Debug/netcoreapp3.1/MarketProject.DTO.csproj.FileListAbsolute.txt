@@ -6,3 +6,11 @@ C:\Users\ahmet\source\repos\MarketProject\MarketProject.DTO\obj\Debug\netcoreapp
 C:\Users\ahmet\source\repos\MarketProject\MarketProject.DTO\obj\Debug\netcoreapp3.1\MarketProject.DTO.AssemblyInfo.cs
 C:\Users\ahmet\source\repos\MarketProject\MarketProject.DTO\obj\Debug\netcoreapp3.1\MarketProject.DTO.dll
 C:\Users\ahmet\source\repos\MarketProject\MarketProject.DTO\obj\Debug\netcoreapp3.1\MarketProject.DTO.pdb
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.DTO\bin\Debug\netcoreapp3.1\MarketProject.DTO.deps.json
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.DTO\bin\Debug\netcoreapp3.1\MarketProject.DTO.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.DTO\bin\Debug\netcoreapp3.1\MarketProject.DTO.pdb
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.DTO\obj\Debug\netcoreapp3.1\MarketProject.DTO.csprojAssemblyReference.cache
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.DTO\obj\Debug\netcoreapp3.1\MarketProject.DTO.AssemblyInfoInputs.cache
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.DTO\obj\Debug\netcoreapp3.1\MarketProject.DTO.AssemblyInfo.cs
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.DTO\obj\Debug\netcoreapp3.1\MarketProject.DTO.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.DTO\obj\Debug\netcoreapp3.1\MarketProject.DTO.pdb

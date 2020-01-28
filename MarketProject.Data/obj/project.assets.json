@@ -639,11 +639,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj",
+      "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj",
       "projectName": "MarketProject.Data",
-      "projectPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj",
+      "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Data\\MarketProject.Data.csproj",
       "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmet\\source\\repos\\MarketProject\\MarketProject.Data\\obj\\",
+      "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\MarketProject.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
