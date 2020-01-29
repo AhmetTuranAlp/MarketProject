@@ -14,3 +14,5 @@ D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\obj\Debug\netcorea
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\obj\Debug\netcoreapp3.1\MarketProject.Data.AssemblyInfo.cs
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\obj\Debug\netcoreapp3.1\MarketProject.Data.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\obj\Debug\netcoreapp3.1\MarketProject.Data.pdb
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\bin\Debug\netcoreapp3.1\MarketProject.Data.runtimeconfig.json
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Data\bin\Debug\netcoreapp3.1\MarketProject.Data.runtimeconfig.dev.json

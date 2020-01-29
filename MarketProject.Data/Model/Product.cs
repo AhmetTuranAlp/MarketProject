@@ -18,7 +18,8 @@ namespace MarketProject.Data.Model
         [Required(ErrorMessage = "Zorunlu Alan")]
         public string Name { get; set; }
 
-        public ProductType ProductType { get; set; }
+        [Required(ErrorMessage = "Zorunlu Alan")]
+        public string ProductType { get; set; }
 
         [Required(ErrorMessage = "Zorunlu Alan")]
         public int Stock { get; set; }

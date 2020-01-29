@@ -1,56 +1,59 @@
-﻿using MarketProject.Data.Repositories;
+﻿using MarketProject.Data.Model;
+using MarketProject.Data.Repositories;
 using MarketProject.Data.UnitOfWork;
-using MarketProject.DTO.Entities;
 using MarketProject.Service.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using static MarketProject.Data.Model.ModelEnums;
 
 namespace MarketProject.Service
 {
-    public class UserService : BaseService, IUserService
+    public class UserService : IUserService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IRepository<User> _userRepository;
-        public UserService(IUnitOfWork unitOfWork, IRepository<User> repository)
+        public UserService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            _userRepository = repository;
-        }
-        
-        public User Login(string userName, string password)
-        {
-            var user = _userRepository.GetAll().FirstOrDefault(x => x.UserName == userName && x.Password == password);
-            var dtoUser = Map<User>(user);
-            return dtoUser;
+            _userRepository = unitOfWork.GetRepository<User>();
         }
 
-        public void Create(User entity)
+        public User Login(string userName, string password)
+        {
+            var user = _userRepository.GetAll().Where(x => x.UserName == userName && x.Password == password).SingleOrDefault();
+       
+            return user;
+        }
+
+        public bool Create(User entity)
         {
             try
             {
-                Data.Model.User user = null;
-                user = Map<Data.Model.User>(user);
+                var newEntity = AutoMapper.Mapper.DynamicMap<User>(entity);
+                newEntity.Status = Status.NewRecord;         
                 _userRepository.Create(entity);
                 _unitOfWork.SaveChanges();
+                return true;
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return false;
             }
         }
 
-        public void Delete(int id)
+        public bool Delete(int id)
         {
             try
             {
                 _userRepository.Delete(id);
                 _unitOfWork.SaveChanges();
+                return true;
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return false;
             }
         }
 
@@ -58,8 +61,7 @@ namespace MarketProject.Service
         {
             try
             {
-                var user = _userRepository.Find(id);
-                return Map<User>(user);
+                return _userRepository.Find(id);
             }
             catch (Exception ex)
             {
@@ -79,15 +81,19 @@ namespace MarketProject.Service
             }
         }
 
-        public void Update(User entity)
+        public bool Update(User entity)
         {
             try
             {
-
+                var updateEntity = _userRepository.Find(entity.Id);
+                AutoMapper.Mapper.DynamicMap(entity, updateEntity);
+                _userRepository.Update(updateEntity);
+                _unitOfWork.SaveChanges();
+                return true;
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return false;
             }
         }
 
@@ -112,7 +118,7 @@ namespace MarketProject.Service
             GC.SuppressFinalize(this);
         }
 
-       
+
 
 
 

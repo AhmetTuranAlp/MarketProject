@@ -1,5 +1,5 @@
-﻿using MarketProject.Data.UnitOfWork;
-using MarketProject.DTO.Entities;
+﻿using MarketProject.Data.Model;
+using MarketProject.Data.UnitOfWork;
 using MarketProject.Service.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Text;
 
 namespace MarketProject.Service
 {
-    public class SalesService : BaseService, ISalesService
+    public class SalesService : ISalesService
     {
         private readonly IUnitOfWork _unitOfWork;
         #region Constructor
@@ -25,31 +25,31 @@ namespace MarketProject.Service
         }
         #endregion
 
-        public void Create(Sales entity)
+        public bool Create(Sales entity)
         {
             try
             {
-                Data.Model.Sales sales = null;
-                sales = Map<Data.Model.Sales>(entity);
                 _salesRepository.Create(entity);
                 _unitOfWork.SaveChanges();
+                return true;
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return false;
             }
         }
 
-        public void Delete(int id)
+        public bool Delete(int id)
         {
             try
             {
                 _salesRepository.Delete(id);
                 _unitOfWork.SaveChanges();
+                return true;
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return false;
             }
         }
 
@@ -57,8 +57,7 @@ namespace MarketProject.Service
         {
             try
             {
-                var sales = _salesRepository.Find(id);
-                return Map<Sales>(sales);
+                return _salesRepository.Find(id);
             }
             catch (Exception ex)
             {
@@ -80,9 +79,16 @@ namespace MarketProject.Service
             }
         }
 
-        public void Update(Sales entity)
+        public bool Update(Sales entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }

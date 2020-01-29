@@ -15,9 +15,7 @@ D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netco
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Service.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Service.pdb
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Data.dll
-D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.DTO.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Data.pdb
-D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.DTO.pdb
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\obj\Debug\netcoreapp3.1\MarketProject.Service.csprojAssemblyReference.cache
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\obj\Debug\netcoreapp3.1\MarketProject.Service.AssemblyInfoInputs.cache
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\obj\Debug\netcoreapp3.1\MarketProject.Service.AssemblyInfo.cs

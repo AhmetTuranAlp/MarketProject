@@ -262,11 +262,9 @@ D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreap
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\MarketProject.Data.dll
-D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\MarketProject.DTO.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\MarketProject.Service.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\MarketProject.Service.pdb
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\MarketProject.Data.pdb
-D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\MarketProject.DTO.pdb
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.csprojAssemblyReference.cache
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\staticwebassets\MarketProject.Web.StaticWebAssets.Manifest.cache
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\staticwebassets\MarketProject.Web.StaticWebAssets.xml
@@ -294,4 +292,15 @@ D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreap
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Debug.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\MarketProject.Common.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\MarketProject.Common.pdb
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\Razor\Views\Product\ProductCreate.cshtml.g.cs
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\Razor\Views\Product\ProductEdit.cshtml.g.cs
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.MvcApplicationPartsAssemblyInfo.cs
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.MvcApplicationPartsAssemblyInfo.cache

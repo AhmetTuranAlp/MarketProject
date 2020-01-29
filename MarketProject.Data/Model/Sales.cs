@@ -22,7 +22,7 @@ namespace MarketProject.Data.Model
             set { _totalPrice = Math.Round(value, 2); }
         }
 
-        public PaymentType PaymentType { get; set; }
+        public string PaymentType { get; set; }
         public List<Basket> BasketInformation { get; set; }
     }
 }

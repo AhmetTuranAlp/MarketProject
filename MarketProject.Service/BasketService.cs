@@ -1,4 +1,4 @@
-﻿using MarketProject.DTO.Entities;
+﻿using MarketProject.Data.Model;
 using MarketProject.Service.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -8,12 +8,12 @@ namespace MarketProject.Service
 {
     public class BasketService : IBasketService
     {
-        public void Create(Basket entity)
+        public bool Create(Basket entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(int id)
+        public bool Delete(int id)
         {
             throw new NotImplementedException();
         }
@@ -28,7 +28,7 @@ namespace MarketProject.Service
             throw new NotImplementedException();
         }
 
-        public void Update(Basket entity)
+        public bool Update(Basket entity)
         {
             throw new NotImplementedException();
         }

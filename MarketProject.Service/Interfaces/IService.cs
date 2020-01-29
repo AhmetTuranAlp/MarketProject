@@ -6,9 +6,9 @@ namespace MarketProject.Service.Interfaces
 {
     public interface IService<TEntity> where TEntity : class
     {
-        void Create(TEntity entity);
-        void Update(TEntity entity);
-        void Delete(int id);
+        bool Create(TEntity entity);
+        bool Update(TEntity entity);
+        bool Delete(int id);
         TEntity Get(int id);
         IEnumerable<TEntity> GetAll();
 
