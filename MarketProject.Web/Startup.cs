@@ -38,6 +38,7 @@ namespace MarketProject.Web
             services.AddTransient(typeof(IUserService), typeof(UserService));
             services.AddTransient(typeof(IProductService), typeof(ProductService));
             services.AddTransient(typeof(IBasketService), typeof(BasketService));
+            services.AddTransient(typeof(ISalesService), typeof(SalesService));
             services.AddMvc();
             services.AddSession();
         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MarketProject.Common;
 using MarketProject.Data.Model;
-using MarketProject.Data.ViewModel;
+using MarketProject.Data.VModel;
 using MarketProject.Service.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -98,8 +98,8 @@ namespace MarketProject.Web.Controllers
                 if (product != null)
                 {
                     EnumHelper enumHelper = new EnumHelper();
-                    ProductEditVM productEditVM = new ProductEditVM();
                     product.ProductType = enumHelper.StringToEnumValue<PaymentType>(product.ProductType).ToString();
+                    ProductEditVM productEditVM = new ProductEditVM();
                     productEditVM.Product = product;
 
                     productEditVM.CategoryList.Add(new SelectListItem() { Value = "", Text = "Kategori Seçiniz..." });

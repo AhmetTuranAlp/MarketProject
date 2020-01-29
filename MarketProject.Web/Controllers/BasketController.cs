@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MarketProject.Common;
+using MarketProject.Data.Model;
 using MarketProject.Service.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using static MarketProject.Data.Model.ModelEnums;
 
@@ -11,14 +14,55 @@ namespace MarketProject.Web.Controllers
     public class BasketController : Controller
     {
         private readonly IBasketService _basketService;
-        public BasketController(IBasketService basketService)
+        private readonly ISalesService _salerService;
+        public BasketController(IBasketService basketService, ISalesService salesService)
         {
             _basketService = basketService;
+            _salerService = salesService;
         }
         public IActionResult Index()
         {
-            return View(_basketService.GetAll().Where(x => x.Status != Status.Deleted).ToList());
+            return View(_basketService.GetAll().Where(x => x.Status != Status.Deleted && x.UserId == Convert.ToInt32(this.HttpContext.Session.GetString("UserId"))).ToList());
         }
+
+        [HttpPost]
+        public ActionResult CompleteShopping(string id)
+        {
+            try
+            {
+                List<Basket> baskets = _basketService.GetAll().Where(x => x.Status != Status.Deleted && x.UserId == Convert.ToInt32(this.HttpContext.Session.GetString("UserId"))).ToList();
+
+                EnumHelper enumHelper = new EnumHelper();
+                Sales sales = new Sales()
+                {
+                    PaymentType = enumHelper.GetEnumDescription(PaymentType.CreditCardOnline),
+                    Status = Status.Active,
+                    UploadDate = DateTime.Now,
+                    UpdateDate = DateTime.Now,
+                    
+                };
+              
+                baskets.ForEach(x =>
+                {
+                    sales.TotalPrice += x.Price;
+                });
+
+                if (_salerService.Create(sales))
+                {
+                    return Json(true);
+                }
+                else
+                {
+                    return Json(false);
+                }
+
+            }
+            catch (Exception)
+            {
+                return Json(false);
+            }
+        }
+
 
         [HttpPost]
         public ActionResult BasketDelete(string id)
@@ -39,5 +83,6 @@ namespace MarketProject.Web.Controllers
                 return Json(false);
             }
         }
+
     }
 }

@@ -70,13 +70,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default panel-table">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div style="margin-left:20px;" text-left">
-                            <button type="button" onclick="ProductCreate(this)" class="btn btn-sm btn-primary btn-create">Ürün Ekle</button>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="panel-body">
                     <table class="table table-striped table-bordered table-list">
                         <thead>
@@ -104,6 +98,9 @@
                         </tbody>
                     </table>
                 </div>
+                <div style="text-align:center" class="panel-footer">
+                    <button type="button" onclick="CompleteShopping('@Model[0].UserId')" class="btn btn-success">Alişverişi Tamamla</button>
+                </div>
             </div>
         </div>
     </div>
@@ -126,6 +123,25 @@
         }
         else {
             ShowMessage("warning", "Kayıt Silme", "Kayıt Silme İşlemi İptal Edildi.");
+        }
+    }
+
+
+    function CompleteShopping(e) {
+        var sonuc = confirm("Alışveriş Tamamlansın mı?")
+        if (sonuc) {
+            var id = e;
+            $.post("/Basket/CompleteShopping", { id: id }, function (res) {
+                if (res) {
+                    window.location.href = "/Sales/Index";
+                }
+                else {
+                    alert("Hata Oluştu")
+                }
+            });
+        }
+        else {
+            ShowMessage("warning", "Alışveriş", "Alışveriş İşlemi İptal Edildi.");
         }
     }
 </script>

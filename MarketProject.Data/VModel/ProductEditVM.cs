@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MarketProject.Data.ViewModel
+namespace MarketProject.Data.VModel
 {
     public class ProductEditVM
     {

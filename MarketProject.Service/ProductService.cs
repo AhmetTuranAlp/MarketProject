@@ -32,6 +32,19 @@ namespace MarketProject.Service
                 return false;
             }
         }
+        Product IProductService.Create(Product product)
+        {
+            try
+            {
+                _productRepository.Create(product);
+                _unitOfWork.SaveChanges();
+                return product;
+            }
+            catch (Exception ex)
+            {
+                return new Product();
+            }
+        }
 
         public bool Delete(int id)
         {
@@ -92,5 +105,7 @@ namespace MarketProject.Service
                 return true;
             }
         }
+
+     
     }
 }

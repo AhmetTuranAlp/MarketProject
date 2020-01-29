@@ -69,9 +69,7 @@ namespace MarketProject.Service
         {
             try
             {
-                var sales = _salesRepository.GetAll();
-                var dtoSales = new List<Sales>();
-                return dtoSales;
+                return _salesRepository.GetAll();
             }
             catch (Exception ex)
             {

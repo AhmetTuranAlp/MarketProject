@@ -14,7 +14,9 @@ C:\Users\ahmet\source\repos\MarketProject\MarketProject.Service\obj\Debug\netcor
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Service.deps.json
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Service.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Service.pdb
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Common.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Data.dll
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Common.pdb
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Data.pdb
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\obj\Debug\netcoreapp3.1\MarketProject.Service.csprojAssemblyReference.cache
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\obj\Debug\netcoreapp3.1\MarketProject.Service.AssemblyInfoInputs.cache
@@ -22,5 +24,3 @@ D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\obj\Debug\netco
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\obj\Debug\netcoreapp3.1\MarketProject.Service.csproj.CopyComplete
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\obj\Debug\netcoreapp3.1\MarketProject.Service.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\obj\Debug\netcoreapp3.1\MarketProject.Service.pdb
-D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Common.dll
-D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Service\bin\Debug\netcoreapp3.1\MarketProject.Common.pdb
