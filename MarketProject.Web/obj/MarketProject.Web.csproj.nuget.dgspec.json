@@ -193,12 +193,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[4.1.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -264,6 +258,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

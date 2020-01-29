@@ -304,3 +304,4 @@ D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreap
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\Razor\Views\Product\ProductEdit.cshtml.g.cs
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.MvcApplicationPartsAssemblyInfo.cs
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.MvcApplicationPartsAssemblyInfo.cache
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\Razor\Views\Basket\Index.cshtml.g.cs

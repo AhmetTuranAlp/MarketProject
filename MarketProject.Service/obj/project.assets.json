@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "AutoMapper/4.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/AutoMapper.dll": {}
-        },
-        "runtime": {
-          "lib/net45/AutoMapper.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2520,39 +2511,6 @@
     }
   },
   "libraries": {
-    "AutoMapper/4.1.1": {
-      "sha512": "wTNIFaF21i0heEEOMOLn4Ki991I+b6Ls+tiwTvmzVhkLo5PmSJcNLuf2eGJEtUnQ3UDBTAAdZEaXAgbTqOe2pg==",
-      "type": "package",
-      "path": "automapper/4.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "automapper.4.1.1.nupkg.sha512",
-        "automapper.nuspec",
-        "lib/MonoAndroid/AutoMapper.XML",
-        "lib/MonoAndroid/AutoMapper.dll",
-        "lib/MonoTouch/AutoMapper.XML",
-        "lib/MonoTouch/AutoMapper.dll",
-        "lib/Xamarin.iOS10/AutoMapper.XML",
-        "lib/Xamarin.iOS10/AutoMapper.dll",
-        "lib/dotnet/AutoMapper.dll",
-        "lib/dotnet/AutoMapper.xml",
-        "lib/net40/AutoMapper.dll",
-        "lib/net40/AutoMapper.xml",
-        "lib/net45/AutoMapper.dll",
-        "lib/net45/AutoMapper.xml",
-        "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+Xamarin.iOS10+MonoTouch10/AutoMapper.dll",
-        "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+Xamarin.iOS10+MonoTouch10/AutoMapper.xml",
-        "lib/sl50/AutoMapper.XML",
-        "lib/sl50/AutoMapper.dll",
-        "lib/win/AutoMapper.dll",
-        "lib/win/AutoMapper.xml",
-        "lib/wp80/AutoMapper.dll",
-        "lib/wp80/AutoMapper.xml",
-        "lib/wpa81/AutoMapper.dll",
-        "lib/wpa81/AutoMapper.xml"
-      ]
-    },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
       "sha512": "fVQsSXNZz38Ysx8iKwwqfOLHhLrAeKEMBS5Ia3Lh7BJjOC2vPV28/yk08AovOMsB3SNQPGnE7bv+lsIBTmAkvw==",
       "type": "package",
@@ -8026,7 +7984,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "AutoMapper >= 4.1.1",
       "MarketProject.Common >= 1.0.0",
       "MarketProject.Data >= 1.0.0"
     ]
@@ -8081,12 +8038,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "dependencies": {
-          "AutoMapper": {
-            "target": "Package",
-            "version": "[4.1.1, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -8105,17 +8056,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AutoMapper 4.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

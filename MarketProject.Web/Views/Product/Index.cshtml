@@ -100,7 +100,7 @@
                                     <td>@item.Stock</td>
                                     <td>@item.Price</td>
                                     <td align="center">
-                                        <a href="/ProductEdit/@item.Id" class="btn btn-success"><em class="fa fa-shopping-cart"></em></a>
+                                        <a onclick="BasketAdd('@item.Id')" class="btn btn-success"><em class="fa fa-shopping-cart"></em></a>
                                         <a href="/ProductEdit/@item.Id" class="btn btn-info"><em class="fa fa-pencil"></em></a>
                                         <a onclick="ProductDelete('@item.Id')" class="btn btn-danger"><em class="fa fa-trash"></em></a>
                                     </td>
@@ -137,10 +137,15 @@
         }
     }
 
-    //function ProductEdit(e) {
-    //      var id = e;
-    //        $.post("/Product/ProductEdit", { id: id }, function (res) {
-               
-    //        });
-    //}
+    function BasketAdd(e) {
+        var id = e;
+        $.post("/Product/BasketAdd", { id: id }, function (res) {
+            if (res) {
+                alert("İşleminiz Başarı ile Tamamlandı.")
+            }
+            else {
+                alert("Hata Oluştu")
+            }
+        });
+    }
 </script>

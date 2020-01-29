@@ -37,8 +37,9 @@ namespace MarketProject.Web
             services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient(typeof(IUserService), typeof(UserService));
             services.AddTransient(typeof(IProductService), typeof(ProductService));
-
+            services.AddTransient(typeof(IBasketService), typeof(BasketService));
             services.AddMvc();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,7 +57,7 @@ namespace MarketProject.Web
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();

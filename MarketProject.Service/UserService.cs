@@ -30,9 +30,7 @@ namespace MarketProject.Service
         public bool Create(User entity)
         {
             try
-            {
-                var newEntity = AutoMapper.Mapper.DynamicMap<User>(entity);
-                newEntity.Status = Status.NewRecord;         
+            {      
                 _userRepository.Create(entity);
                 _unitOfWork.SaveChanges();
                 return true;
@@ -86,7 +84,6 @@ namespace MarketProject.Service
             try
             {
                 var updateEntity = _userRepository.Find(entity.Id);
-                AutoMapper.Mapper.DynamicMap(entity, updateEntity);
                 _userRepository.Update(updateEntity);
                 _unitOfWork.SaveChanges();
                 return true;

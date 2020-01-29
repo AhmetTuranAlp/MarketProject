@@ -23,8 +23,6 @@ namespace MarketProject.Service
         {
             try
             {
-                var newEntity = AutoMapper.Mapper.DynamicMap<Product>(entity);
-                newEntity.Status = Status.NewRecord;
                 _productRepository.Create(entity);
                 _unitOfWork.SaveChanges();
                 return true;
@@ -76,11 +74,23 @@ namespace MarketProject.Service
 
         public bool Update(Product entity)
         {
-            var updateEntity = _productRepository.Find(entity.Id);
-            AutoMapper.Mapper.DynamicMap(entity, updateEntity);
-            _productRepository.Update(updateEntity);
-            _unitOfWork.SaveChanges();
-            return true;
+            try
+            {
+                Product product = _productRepository.Find(entity.Id);
+                product.Price = entity.Price;
+                product.Stock = entity.Stock;
+                product.Name = entity.Name;
+                product.ProductType = entity.ProductType;
+                product.UpdateDate = entity.UpdateDate;
+                product.Status = Status.Active;
+                _productRepository.Update(product);
+                _unitOfWork.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return true;
+            }
         }
     }
 }

@@ -6,6 +6,7 @@ using MarketProject.Common;
 using MarketProject.Data.Model;
 using MarketProject.Data.ViewModel;
 using MarketProject.Service.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using static MarketProject.Data.Model.ModelEnums;
@@ -15,13 +16,15 @@ namespace MarketProject.Web.Controllers
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
-        public ProductController(IProductService productService)
+        private readonly IBasketService _basketService;
+        public ProductController(IProductService productService, IBasketService basketService)
         {
             _productService = productService;
+            _basketService = basketService;
         }
         public IActionResult Index()
         {
-            return View(_productService.GetAll().Where(x=>x.Status !=  Status.Deleted).ToList());
+            return View(_productService.GetAll().Where(x => x.Status != Status.Deleted).ToList());
         }
 
         public ActionResult ProductCreate()
@@ -98,7 +101,7 @@ namespace MarketProject.Web.Controllers
                     ProductEditVM productEditVM = new ProductEditVM();
                     product.ProductType = enumHelper.StringToEnumValue<PaymentType>(product.ProductType).ToString();
                     productEditVM.Product = product;
-                   
+
                     productEditVM.CategoryList.Add(new SelectListItem() { Value = "", Text = "Kategori Seçiniz..." });
                     productEditVM.CategoryList.AddRange(enumHelper.GetEnumListWithDescription(typeof(ProductType)));
                     return View(productEditVM);
@@ -110,10 +113,75 @@ namespace MarketProject.Web.Controllers
             }
             catch (Exception)
             {
-
-                throw;
+                return View(new ProductEditVM());
             }
         }
 
+        [HttpPost]
+        public ActionResult UpdateProduct(string Id, string name, decimal price, int stock, string category)
+        {
+            try
+            {
+                EnumHelper enumHelper = new EnumHelper();
+                Product product = new Product()
+                {
+                    Id = Convert.ToInt32(Id),
+                    Name = name,
+                    Price = price,
+                    ProductType = enumHelper.IntToEnumName<ProductType>(Convert.ToInt32(category)),
+                    Status = Status.Active,
+                    Stock = stock,
+                    UpdateDate = DateTime.Now,
+                    UploadDate = DateTime.Now
+                };
+
+                if (_productService.Update(product))
+                {
+                    return Json(true);
+                }
+                else
+                {
+                    return Json(false);
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(false);
+            }
+        }
+
+
+
+        [HttpPost]
+        public ActionResult BasketAdd(string id)
+        {
+            try
+            {
+                Product product = _productService.Get(Convert.ToInt32(id));
+                Basket basket = new Basket()
+                {
+                    Price = product.Price,
+                    Status = Status.NewRecord,
+                    ProductName = product.Name,
+                    Quantity = 1,
+                    UpdateDate = DateTime.Now,
+                    UploadDate = DateTime.Now,
+                    UserId = Convert.ToInt32(this.HttpContext.Session.GetString("UserId"))
+                };
+                if (_basketService.Create(basket))
+                {
+                    return Json(true);
+                }
+                else
+                {
+                    return Json(false);
+                }
+
+            }
+            catch (Exception)
+            {
+                return Json(false);
+            }
+        }
     }
 }

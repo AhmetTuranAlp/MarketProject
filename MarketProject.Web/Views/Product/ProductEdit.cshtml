@@ -36,7 +36,7 @@
                     <label for="formGroupExampleInput">Stok</label>
                     <input type="number" class="form-control" value="@Model.Product.Stock"  id="stock" placeholder="Stok Miktarı Giriniz.">
                 </div>
-                <button type="button" onclick="UpdateProduct(this)" class="btn btn-success">Ekle</button>
+                <button type="button" onclick="UpdateProduct(this)" class="btn btn-success">Güncelle</button>
             </div>
         </div>
     </div>
@@ -51,7 +51,7 @@
             var stock = $("#stock").val();
             var category = $("#category").val();
 
-            $.post("/Product/ProductCreate", { name: name, price: price, stock: stock, category: category }, function (res) {
+            $.post("/Product/UpdateProduct", {Id:'@Model.Product.Id', name: name, price: price, stock: stock, category: category }, function (res) {
                 if (res) {
                     window.location.href = "/Product/Index";
                 }

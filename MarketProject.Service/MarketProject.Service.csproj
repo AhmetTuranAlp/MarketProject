@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="4.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\MarketProject.Common\MarketProject.Common.csproj" />
     <ProjectReference Include="..\MarketProject.Data\MarketProject.Data.csproj" />
   </ItemGroup>

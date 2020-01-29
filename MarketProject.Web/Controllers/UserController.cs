@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MarketProject.Common;
 using MarketProject.Data.Context;
 using MarketProject.Data.Model;
 using MarketProject.Data.Repositories;
 using MarketProject.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Web;
+using Microsoft.AspNetCore.Http;
 
 namespace MarketProject.Web.Controllers
 {
@@ -26,8 +29,10 @@ namespace MarketProject.Web.Controllers
 
         public ActionResult Login(string Username, string Password)
         {
-            if (_userService.Login(Username, Password) != null)
+            User user = _userService.Login(Username, Password);
+            if (user != null)
             {
+                HttpContext.Session.SetString("UserId", user.Id.ToString());
                 return Json(true);
             }
             else
