@@ -31,5 +31,6 @@ namespace MarketProject.Data.Model
             get { return _price; }
             set { _price = Math.Round(value, 2); }
         }
+
     }
 }

@@ -5,6 +5,7 @@ using MarketProject.Service.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static MarketProject.Data.Model.ModelEnums;
 
 namespace MarketProject.Service
 {
@@ -65,7 +66,23 @@ namespace MarketProject.Service
 
         public bool Update(Basket entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Basket basket = _basketRepository.Find(entity.Id);
+                basket.Price = entity.Price;
+                basket.ProductId = entity.ProductId;
+                basket.ProductName = entity.ProductName;
+                basket.Quantity = entity.Quantity;
+                basket.Status = entity.Status;
+                basket.UpdateDate = DateTime.Now;
+                _basketRepository.Update(basket);
+                _unitOfWork.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return true;
+            }
         }
     }
 }

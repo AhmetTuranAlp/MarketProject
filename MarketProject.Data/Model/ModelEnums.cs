@@ -29,7 +29,7 @@ namespace MarketProject.Data.Model
             CashAtTheDoor = 2
         }
 
-        public enum ProductType : int
+        public enum ProductType
         {
             [Description("Sıvı Yağlar")]
             LiquidOils = 0,

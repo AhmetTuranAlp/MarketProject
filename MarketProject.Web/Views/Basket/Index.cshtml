@@ -83,24 +83,30 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in Model)
+                            @if (Model.Count() > 0)
                             {
-                                <tr>
-                                    <td class="hidden-xs">@item.Id</td>
-                                    <td>@item.ProductName</td>
-                                    <td>@item.Price TL</td>
-                                    <td>@item.Quantity</td>
-                                    <td align="center">
-                                        <a onclick="BasketDelete('@item.Id')" class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                                    </td>
-                                </tr>
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td class="hidden-xs">@item.Id</td>
+                                        <td>@item.ProductName</td>
+                                        <td>@item.Price TL</td>
+                                        <td>@item.Quantity</td>
+                                        <td align="center">
+                                            <a onclick="BasketDelete('@item.Id')" class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                                        </td>
+                                    </tr>
+                                }
                             }
                         </tbody>
                     </table>
                 </div>
-                <div style="text-align:center" class="panel-footer">
-                    <button type="button" onclick="CompleteShopping('@Model[0].UserId')" class="btn btn-success">Alişverişi Tamamla</button>
-                </div>
+                @if (Model.Count() > 0)
+                {<div style="text-align:center" class="panel-footer">
+                        <button type="button" onclick="CompleteShopping('@Model[0].UserId')" class="btn btn-success">Alişverişi Tamamla</button>
+                    </div>
+                }
+
             </div>
         </div>
     </div>

@@ -39,12 +39,25 @@ namespace MarketProject.Web.Controllers
                     Status = Status.Active,
                     UploadDate = DateTime.Now,
                     UpdateDate = DateTime.Now,
-                    
+
                 };
-              
+
                 baskets.ForEach(x =>
                 {
-                    sales.TotalPrice += x.Price;
+                    if (x.Quantity > 1)
+                    {
+                        for (int i = 0; i < x.Quantity; i++)
+                        {
+                            sales.TotalPrice += x.Price;
+                        }
+                    }
+                    else
+                    {
+                        sales.TotalPrice += x.Price;
+                    }
+              
+                    x.Status = Status.Deleted;
+                    _basketService.Update(x);
                 });
 
                 if (_salerService.Create(sales))

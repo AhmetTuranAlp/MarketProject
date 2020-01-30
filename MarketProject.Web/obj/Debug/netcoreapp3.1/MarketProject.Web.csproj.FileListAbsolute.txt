@@ -278,8 +278,6 @@ D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\bin\Debug\netcoreap
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.csprojAssemblyReference.cache
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\staticwebassets\MarketProject.Web.StaticWebAssets.Manifest.cache
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\staticwebassets\MarketProject.Web.StaticWebAssets.xml
-D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.MvcApplicationPartsAssemblyInfo.cs
-D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.MvcApplicationPartsAssemblyInfo.cache
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.RazorAssemblyInfo.cache
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.RazorAssemblyInfo.cs
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.AssemblyInfoInputs.cache
@@ -306,3 +304,6 @@ D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreap
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.csproj.CopyComplete
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.dll
 D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.pdb
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\Razor\Views\User\Register.cshtml.g.cs
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.MvcApplicationPartsAssemblyInfo.cs
+D:\Yazılım\GitHup-Projeler\MarketProject\MarketProject.Web\obj\Debug\netcoreapp3.1\MarketProject.Web.MvcApplicationPartsAssemblyInfo.cache

@@ -40,7 +40,46 @@ namespace MarketProject.Web.Controllers
             {
                 return Json(false);
             }
-        
+
+        }
+
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Register(string Username, string Password)
+        {
+            User user = new User()
+            {
+                Name = Username,
+                Password = Password,
+                Phone = "3242342",
+                Status = ModelEnums.Status.Active,
+                Surname = Username,
+                UserName = Username,
+                UpdateDate = DateTime.Now,
+                UploadDate = DateTime.Now
+            };
+          
+            if (_userService.Create(user))
+            {
+                User userlogin = _userService.Login(Username, Password);
+                if (userlogin != null)
+                {
+                    HttpContext.Session.SetString("UserId", user.Id.ToString());
+                    return Json(true);
+                }
+                else
+                {
+                    return Json(false);
+                }
+            }
+            else
+            {
+                return Json(false);
+            }
         }
     }
 }

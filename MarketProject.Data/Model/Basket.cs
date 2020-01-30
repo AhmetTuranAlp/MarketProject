@@ -30,5 +30,7 @@ namespace MarketProject.Data.Model
         [Required(ErrorMessage = "Zorunlu Alan")]
         public string ProductName { get; set; }
 
+        [Required(ErrorMessage = "Zorunlu Alan")]
+        public int ProductId { get; set; }
     }
 }

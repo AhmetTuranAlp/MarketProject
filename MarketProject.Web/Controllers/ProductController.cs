@@ -24,7 +24,21 @@ namespace MarketProject.Web.Controllers
         }
         public IActionResult Index()
         {
-            return View(_productService.GetAll().Where(x => x.Status != Status.Deleted).ToList());
+            List<Product> products = new List<Product>();
+            try
+            {
+                EnumHelper enumHelper = new EnumHelper();
+                products = _productService.GetAll().Where(x => x.Status != Status.Deleted).ToList();
+                products.ForEach(x =>
+                {
+                    x.ProductType = enumHelper.IntToEnumName<ProductType>(Convert.ToInt32(x.ProductType));
+                });
+                return View(products);
+            }
+            catch (Exception)
+            {
+                return View(products);
+            }
         }
 
         public ActionResult ProductCreate()
@@ -46,7 +60,7 @@ namespace MarketProject.Web.Controllers
                 {
                     Name = name,
                     Price = price,
-                    ProductType = enumHelper.IntToEnumName<ProductType>(Convert.ToInt32(category)),
+                    ProductType = category,
                     Status = Status.Active,
                     Stock = stock,
                     UpdateDate = DateTime.Now,
@@ -98,7 +112,7 @@ namespace MarketProject.Web.Controllers
                 if (product != null)
                 {
                     EnumHelper enumHelper = new EnumHelper();
-                    product.ProductType = enumHelper.StringToEnumValue<PaymentType>(product.ProductType).ToString();
+                    //product.ProductType = enumHelper.StringToEnumValue<PaymentType>(product.ProductType).ToString();
                     ProductEditVM productEditVM = new ProductEditVM();
                     productEditVM.Product = product;
 
@@ -122,13 +136,12 @@ namespace MarketProject.Web.Controllers
         {
             try
             {
-                EnumHelper enumHelper = new EnumHelper();
                 Product product = new Product()
                 {
                     Id = Convert.ToInt32(Id),
                     Name = name,
                     Price = price,
-                    ProductType = enumHelper.IntToEnumName<ProductType>(Convert.ToInt32(category)),
+                    ProductType = category,
                     Status = Status.Active,
                     Stock = stock,
                     UpdateDate = DateTime.Now,
@@ -150,31 +163,48 @@ namespace MarketProject.Web.Controllers
             }
         }
 
-
-
         [HttpPost]
         public ActionResult BasketAdd(string id)
         {
             try
             {
                 Product product = _productService.Get(Convert.ToInt32(id));
-                Basket basket = new Basket()
+
+                var baskets = _basketService.GetAll().Where(x => x.ProductId == product.Id && x.Status != Status.Deleted);
+                if (baskets.Count() > 0)
                 {
-                    Price = product.Price,
-                    Status = Status.NewRecord,
-                    ProductName = product.Name,
-                    Quantity = 1,
-                    UpdateDate = DateTime.Now,
-                    UploadDate = DateTime.Now,
-                    UserId = Convert.ToInt32(this.HttpContext.Session.GetString("UserId"))
-                };
-                if (_basketService.Create(basket))
-                {
-                    return Json(true);
+                    Basket basket = baskets.FirstOrDefault();
+                    basket.Quantity += 1;
+                    if (_basketService.Update(basket))
+                    {
+                        return Json(true);
+                    }
+                    else
+                    {
+                        return Json(false);
+                    }
                 }
                 else
                 {
-                    return Json(false);
+                    Basket basket = new Basket()
+                    {
+                        Price = product.Price,
+                        Status = Status.NewRecord,
+                        ProductName = product.Name,
+                        Quantity = 1,
+                        UpdateDate = DateTime.Now,
+                        UploadDate = DateTime.Now,
+                        UserId = Convert.ToInt32(this.HttpContext.Session.GetString("UserId")),
+                        ProductId = product.Id
+                    };
+                    if (_basketService.Create(basket))
+                    {
+                        return Json(true);
+                    }
+                    else
+                    {
+                        return Json(false);
+                    }
                 }
 
             }

@@ -32,7 +32,7 @@ namespace MarketProject.Service
                 return false;
             }
         }
-        Product IProductService.Create(Product product)
+        Product IProductService.CreateApi(Product product)
         {
             try
             {

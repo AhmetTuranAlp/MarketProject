@@ -7,6 +7,6 @@ namespace MarketProject.Service.Interfaces
 {
     public interface IProductService : IService<Product>
     {
-        Product Create(Product product);
+        Product CreateApi(Product product);
     }
 }

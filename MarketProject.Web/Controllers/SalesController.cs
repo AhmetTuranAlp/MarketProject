@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MarketProject.Data.Model;
 using MarketProject.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,15 +10,17 @@ namespace MarketProject.Web.Views.Product
 {
     public class SalesController : Controller
     {
-        private readonly ISalesService _salesService;
-
-        public SalesController(ISalesService salesService)
+        private readonly IBasketService _basketService;
+        private readonly ISalesService _salerService;
+        public SalesController(IBasketService basketService, ISalesService salesService)
         {
-            _salesService = salesService;
+            _basketService = basketService;
+            _salerService = salesService;
         }
         public IActionResult Index()
         {
-            return View(_salesService.GetAll().Where(x=>x.Status != Data.Model.ModelEnums.Status.Deleted).ToList());
+            int salesMax = _salerService.GetAll().Where(x => x.Status == ModelEnums.Status.Active).ToList().Max(v=>v.Id);
+            return View(_salerService.Get(salesMax));
         }
     }
 }

@@ -35,7 +35,7 @@ namespace MarketProject.Api.Controllers
             {
                 return BadRequest();
             }
-            var createdProductionOrder = _productService.Create(product);
+            var createdProductionOrder = _productService.CreateApi(product);
 
             return CreatedAtRoute("GetProductionOrder", new { id = createdProductionOrder.Id }, createdProductionOrder);
         }

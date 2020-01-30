@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model List<MarketProject.Data.Model.Sales>
+@model MarketProject.Data.Model.Sales
 
 <style>
     .panel-table .panel-body {
@@ -83,15 +83,12 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in Model)
-                            {
-                                <tr>
-                                    <td class="hidden-xs">@item.Id</td>
-                                    <td>@String.Format("{0:dd MM yyyy}", item.UpdateDate)</td>
-                                    <td>@item.TotalPrice TL</td>
-                                    <td>@item.PaymentType</td>
-                                </tr>
-                            }
+                            <tr>
+                                <td class="hidden-xs">@Model.Id</td>
+                                <td>@String.Format("{0:dd MM yyyy}", Model.UpdateDate)</td>
+                                <td>@Model.TotalPrice TL</td>
+                                <td>@Model.PaymentType</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
