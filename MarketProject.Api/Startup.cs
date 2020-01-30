@@ -31,17 +31,15 @@ namespace MarketProject.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddDbContext<MarketProjectDbContext>(options =>
            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient(typeof(IUnitOfWork), typeof(UnitOfWork));
             services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
-            services.AddTransient(typeof(IUserService), typeof(UserService));
             services.AddTransient(typeof(IProductService), typeof(ProductService));
-            services.AddTransient(typeof(IBasketService), typeof(BasketService));
-            services.AddTransient(typeof(ISalesService), typeof(SalesService));
+            services.AddMvc();
 
-            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,9 +58,7 @@ namespace MarketProject.Api
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Product}/{action=Get}/{id?}");
+                endpoints.MapControllers();
             });
         }
     }

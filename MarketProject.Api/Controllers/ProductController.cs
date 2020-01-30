@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MarketProject.Api.Controllers
 {
+    [Route("[controller]")]
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
@@ -35,9 +36,18 @@ namespace MarketProject.Api.Controllers
             {
                 return BadRequest();
             }
-            var createdProductionOrder = _productService.CreateApi(product);
+            var newProduct = _productService.CreateApi(product);
 
-            return CreatedAtRoute("GetProductionOrder", new { id = createdProductionOrder.Id }, createdProductionOrder);
+            return CreatedAtRoute("GetProduct", new
+            {
+                id = newProduct.Id
+            }, newProduct);
+        }
+
+        [HttpGet("{id}", Name = "GetProduct")]
+        public Product Get(int id)
+        {
+            return _productService.Get(id);
         }
     }
 }

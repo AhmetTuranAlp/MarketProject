@@ -47,14 +47,20 @@
             var stock = $("#stock").val();
             var category = $("#category").val();
 
-            $.post("/Product/ProductCreate", { name: name, price: price, stock: stock, category: category }, function (res) {
-                if (res) {
-                    window.location.href = "/Product/Index";
-                }
-                else {
-                    alert("İlgili Alanlar Boş Geçilemez")
-                }
-            });
+            if (stock > 0 && price > 0) {
+                $.post("/Product/ProductCreate", { name: name, price: price, stock: stock, category: category }, function (res) {
+                    if (res) {
+                        window.location.href = "/Product/Index";
+                    }
+                    else {
+                        alert("İlgili Alanlar Boş Geçilemez")
+                    }
+                });
+            }
+            else {
+                alert("İlgili Alanlar Boş Geçilemez")
+            }
+
         }
         else {
             ShowMessage("success", "Kayıt Ekleme", "Kayıt Ekleme İşlemi İptal Edildi.");
