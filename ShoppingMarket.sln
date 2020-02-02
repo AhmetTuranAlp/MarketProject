@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingMarket.DTO", "Shopp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingMarket.Service", "ShoppingMarket.Service\ShoppingMarket.Service.csproj", "{2F020707-E25D-4AC4-8914-CFEF0777348D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingMarket.Api", "ShoppingMarket.Api\ShoppingMarket.Api.csproj", "{5ADC5444-5554-41CB-A5E7-4FD835B13AEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingMarket.Api", "ShoppingMarket.Api\ShoppingMarket.Api.csproj", "{5ADC5444-5554-41CB-A5E7-4FD835B13AEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
