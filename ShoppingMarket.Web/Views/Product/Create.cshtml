@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model ShoppingMarket.DTO.Entities.ProductDTO
+
+<link href="~/lobibox-master/dist/css/lobibox.min.css" rel="stylesheet" />
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="~/css/Product.css" rel="stylesheet" />
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="~/js/Product.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+<script src="~/lobibox-master/dist/js/lobibox.min.js"></script>
+<script src="~/js/Product.js"></script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <form >
+                <div class="form-group">
+                    <label>Ürün Adı</label>
+                    <input type="text" name="Name" class="form-control" id="Name" placeholder="Ürün Adı Giriniz.">
+                    <span id="spanName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Kısa Açıklama</label>
+                    <input name="ShortDescription" type="text" class="form-control" id="ShortDescription" placeholder="Kısa Açıklama Giriniz.">
+                    <span id="spanShortDescription" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Açıklama</label>
+                    <input type="text" name="Description" class="form-control" id="Description" placeholder="Açıklama Giriniz.">
+                    <span id="spanDescription" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Kategori</label>
+                    <select name="CategoryName" id="CategoryName" class="form-control">
+                        <option selected="selected">Sıvı Yağlar</option>
+                        <option>Organik Gıda</option>
+                        <option>Gurme Ürünler</option>
+                        <option>Glutensiz Ürünler</option>
+                        <option>Kuruyemiş</option>
+                        <option>Baharat</option>
+                        <option>Aktar Ürünleri</option>
+                        <option>Kuru Gıda</option>
+                        <option>Kahvaltılık</option>
+                        <option>Atıştırmalıklar</option>
+                        <option>Şarküteri</option>
+                        <option>Yemek Sosları</option>
+                        <option>Hediyelik Çikolata</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label>Marka</label>
+                    <select name="BrandName" id="BrandName" class="form-control">
+                        <option selected="selected">Sütaş</option>
+                        <option>Eti</option>
+                        <option>Pınar</option>
+                        <option>Jocobs</option>
+                        <option>Sırma</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label>Satış Fiyatı</label>
+                    <input type="number" name="SalePrice" class="form-control" id="SalePrice" placeholder="Fiyat Giriniz.">
+                    <span id="spanSalePrice" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Stok Adedi</label>
+                    <input type="number" name="Stock" class="form-control" id="Stock" placeholder="Stok Adedi Giriniz.">
+                    <span id="spanStock" class="text-danger"></span>
+                </div>
+                @*<div class="form-group">
+            <label>Upload Image</label>
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <span class="btn btn-default btn-file">
+                        Browse… <input type="file" id="imgInp">
+                    </span>
+                </span>
+                <input type="text" class="form-control" readonly>
+            </div>
+            <img id='img-upload' />
+        </div>*@
+                <div class="form-group">
+                    <input type="button" class="form-control btn btn-success col-md-4" value="Kaydet" onclick="ProductSave()">
+                </div>
+            </form>
+ 
+            <br /><br /><br /><br /> <br /><br /><br /><br />
+        </div>
+    </div>
+</div>

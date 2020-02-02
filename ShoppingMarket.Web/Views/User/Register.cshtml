@@ -1,0 +1,64 @@
+﻿
+@{
+    Layout = null;
+}
+@model ShoppingMarket.DTO.Entities.UserDTO
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kayıt Ol</title>
+    <title>Giriş Yap</title>
+    <link href="~/lobibox-master/dist/css/lobibox.min.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="~/css/Account.css" rel="stylesheet" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="~/lobibox-master/dist/js/lobibox.min.js"></script>
+    <script src="~/js/Account.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-login">
+                    <div class="panel-heading">
+                        <div class="col-xs-6 col-md-offset-3">
+                            <a href="#" class="active" id="login-form-link">Kayıt Ol</a>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">                            
+                                <form asp-controller="user" asp-action="Register" id="register-form" method="post">
+                                    <div class="form-group">
+                                        <input type="text" asp-for="UserName" name="UserName" id="username" tabindex="1" class="form-control" placeholder="Kullanıcı Adı" value="@Model.UserName">
+                                        <span asp-validation-for="UserName" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" asp-for="Email" name="Email" id="email" tabindex="1" class="form-control" placeholder="E-posta Adresi" value="@Model.Email">
+                                        <span asp-validation-for="Email" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" asp-for="Password" name="Password" id="password" tabindex="2" class="form-control" placeholder="Şifre" value="@Model.Password">
+                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Kayıt Ol">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

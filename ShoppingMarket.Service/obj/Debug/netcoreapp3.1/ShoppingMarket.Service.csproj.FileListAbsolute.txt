@@ -1,0 +1,15 @@
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\bin\Debug\netcoreapp3.1\ShoppingMarket.Service.deps.json
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\bin\Debug\netcoreapp3.1\ShoppingMarket.Service.dll
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\bin\Debug\netcoreapp3.1\ShoppingMarket.Service.pdb
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\obj\Debug\netcoreapp3.1\ShoppingMarket.Service.csprojAssemblyReference.cache
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\obj\Debug\netcoreapp3.1\ShoppingMarket.Service.AssemblyInfoInputs.cache
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\obj\Debug\netcoreapp3.1\ShoppingMarket.Service.AssemblyInfo.cs
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\obj\Debug\netcoreapp3.1\ShoppingMarket.Service.dll
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\obj\Debug\netcoreapp3.1\ShoppingMarket.Service.pdb
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\bin\Debug\netcoreapp3.1\ShoppingMarket.Common.dll
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\bin\Debug\netcoreapp3.1\ShoppingMarket.DTO.dll
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\bin\Debug\netcoreapp3.1\ShoppingMarket.Common.pdb
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\bin\Debug\netcoreapp3.1\ShoppingMarket.DTO.pdb
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\obj\Debug\netcoreapp3.1\ShoppingMarket.Service.csproj.CopyComplete
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\bin\Debug\netcoreapp3.1\ShoppingMarket.Data.dll
+C:\Users\ahmet\source\repos\ShoppingMarket\ShoppingMarket.Service\bin\Debug\netcoreapp3.1\ShoppingMarket.Data.pdb
