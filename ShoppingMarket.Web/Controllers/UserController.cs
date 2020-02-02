@@ -36,12 +36,12 @@ namespace ShoppingMarket.Web.Controllers
                 var result = _userService.Login(user.UserName, user.Password);
                 if (result.Result != null && result.IsSuccess)
                 {
+                    #region Session
                     HttpContext.Session.SetString("UserId", result.Result.Id.ToString());
                     List<BasketDTO> baskets = _basketService.GetAll().Where(x => x.Status == Status.Active && x.UserCode == this.HttpContext.Session.GetString("UserId")).ToList();
-                    HttpContext.Session.Set<List<BasketDTO>>("BasketCard", baskets);
-
-
-
+                    HttpContext.Session.Set<List<BasketDTO>>("BasketCard", baskets); 
+                    #endregion
+                                       
                     return RedirectToAction("List", "Product");
                 }
                 else
@@ -78,9 +78,11 @@ namespace ShoppingMarket.Web.Controllers
                 var result = _userService.Create(user);
                 if (result.Result != null && result.IsSuccess)
                 {
+                    #region Session
                     HttpContext.Session.SetString("UserId", result.Result.Id.ToString());
                     List<BasketDTO> baskets = _basketService.GetAll().Where(x => x.Status == Status.Active && x.UserCode == this.HttpContext.Session.GetString("UserId")).ToList();
-                    HttpContext.Session.Set<List<BasketDTO>>("BasketCard", baskets);
+                    HttpContext.Session.Set<List<BasketDTO>>("BasketCard", baskets); 
+                    #endregion
                     return RedirectToAction("List", "Product");
                 }
                 else

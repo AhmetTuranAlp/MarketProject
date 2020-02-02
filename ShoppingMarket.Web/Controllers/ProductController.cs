@@ -114,20 +114,23 @@ namespace ShoppingMarket.Web.Controllers
         {
             try
             {
-                var product = _productService.Get(id);
+                var product = _productService.Get(id); // Ürün Çekiliyor.
                 if (product.Result != null && product.IsSuccess)
                 {
-                    var basketProduct = _basketService.GetBasket(Convert.ToInt32(this.HttpContext.Session.GetString("UserId")), Convert.ToInt32(product.Result.ProductId));
+                    var basketProduct = _basketService.GetBasket(Convert.ToInt32(this.HttpContext.Session.GetString("UserId")), Convert.ToInt32(product.Result.ProductId)); //İlgiliÜrün Sepet de Olup Olmadıgına Bakılıyor.
                     if (basketProduct.Result != null)
                     {
+                        //Ürün Sepet de Varsa
                         basketProduct.Result.Quantity += 1;
                         if (product.Result.Stock >= basketProduct.Result.Quantity)
                         {
                             var result = _basketService.Update(basketProduct.Result);
                             if (result.Result != null && result.IsSuccess)
                             {
+                                #region Sepet Session'ı Güncelleniyor.
                                 List<BasketDTO> basketsSession = _basketService.GetAll().Where(x => x.Status == Status.Active && x.UserCode == this.HttpContext.Session.GetString("UserId")).ToList();
-                                HttpContext.Session.Set<List<BasketDTO>>("BasketCard", basketsSession);
+                                HttpContext.Session.Set<List<BasketDTO>>("BasketCard", basketsSession); 
+                                #endregion
                                 return Json(true);
                             }
                             else
@@ -142,6 +145,7 @@ namespace ShoppingMarket.Web.Controllers
                     }
                     else
                     {
+                        //Ürün Sepet de Yoksa
                         if (product.Result.Stock > 0)
                         {
                             BasketDTO basketDTO = new BasketDTO()
@@ -155,12 +159,13 @@ namespace ShoppingMarket.Web.Controllers
                                 UserCode = this.HttpContext.Session.GetString("UserId"),
                                 ProductCode = product.Result.ProductId
                             };
-
                             var result = _basketService.Create(basketDTO);
                             if (result.Result != null && result.IsSuccess)
                             {
+                                #region Sepet Session'ı Güncelleniyor.
                                 List<BasketDTO> basketsSession = _basketService.GetAll().Where(x => x.Status == Status.Active && x.UserCode == this.HttpContext.Session.GetString("UserId")).ToList();
-                                HttpContext.Session.Set<List<BasketDTO>>("BasketCard", basketsSession);
+                                HttpContext.Session.Set<List<BasketDTO>>("BasketCard", basketsSession); 
+                                #endregion
                                 return Json(true);
                             }
                             else

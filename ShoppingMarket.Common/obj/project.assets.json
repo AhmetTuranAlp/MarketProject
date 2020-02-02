@@ -6300,11 +6300,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj",
+      "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj",
       "projectName": "ShoppingMarket.Common",
-      "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj",
+      "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj",
       "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Common\\obj\\",
+      "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

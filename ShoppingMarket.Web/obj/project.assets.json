@@ -9543,11 +9543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj",
+      "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj",
       "projectName": "ShoppingMarket.Web",
-      "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj",
+      "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj",
       "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Web\\obj\\",
+      "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -9568,11 +9568,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj"
+            "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {
+              "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj"
             },
-            "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj"
+            "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj": {
+              "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj"
             }
           }
         }

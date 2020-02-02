@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj": {}
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj": {
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj",
+        "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj",
         "projectName": "ShoppingMarket.Common",
-        "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj",
+        "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Common\\obj\\",
+        "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj",
+        "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj",
         "projectName": "ShoppingMarket.Data",
-        "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj",
+        "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\obj\\",
+        "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj": {
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj",
+        "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj",
         "projectName": "ShoppingMarket.DTO",
-        "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj",
+        "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.DTO\\obj\\",
+        "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -195,14 +195,14 @@
         }
       }
     },
-    "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj": {
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj",
+        "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj",
         "projectName": "ShoppingMarket.Service",
-        "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj",
+        "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Service\\obj\\",
+        "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -223,14 +223,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj": {
-                "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj"
+              "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj": {
+                "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Common\\ShoppingMarket.Common.csproj"
               },
-              "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {
-                "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj"
+              "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {
+                "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj"
               },
-              "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj": {
-                "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj"
+              "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj": {
+                "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj"
               }
             }
           }
@@ -268,14 +268,14 @@
         }
       }
     },
-    "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj": {
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj",
+        "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj",
         "projectName": "ShoppingMarket.Web",
-        "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj",
+        "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Web\\ShoppingMarket.Web.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Web\\obj\\",
+        "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -296,11 +296,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {
-                "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj"
+              "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {
+                "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj"
               },
-              "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj": {
-                "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj"
+              "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj": {
+                "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj"
               }
             }
           }

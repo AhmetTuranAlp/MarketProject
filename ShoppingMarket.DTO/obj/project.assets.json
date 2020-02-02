@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj",
+      "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj",
       "projectName": "ShoppingMarket.DTO",
-      "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj",
+      "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.DTO\\ShoppingMarket.DTO.csproj",
       "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.DTO\\obj\\",
+      "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.DTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

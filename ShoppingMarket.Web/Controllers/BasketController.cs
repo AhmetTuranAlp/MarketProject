@@ -45,8 +45,10 @@ namespace ShoppingMarket.Web.Controllers
                     var result = _basketService.Update(basket.Result);
                     if (result.IsSuccess)
                     {
+                        #region Sepet Session'ı Güncelleniyor.
                         List<BasketDTO> basketsSession = _basketService.GetAll().Where(x => x.Status == Status.Active && x.UserCode == this.HttpContext.Session.GetString("UserId")).ToList();
-                        HttpContext.Session.Set<List<BasketDTO>>("BasketCard", basketsSession);
+                        HttpContext.Session.Set<List<BasketDTO>>("BasketCard", basketsSession); 
+                        #endregion
                         return Json(true);
                     }
                     else
@@ -99,20 +101,8 @@ namespace ShoppingMarket.Web.Controllers
                     _basketService.Update(x);
                     #endregion
 
-                    #region Ödeme Modeline Bilgiler Set Ediliyor.
-                 
-                    if (x.Quantity > 1)
-                    {
-                        for (int i = 0; i < x.Quantity; i++)
-                        {
-                            sales.TotalPrice += x.Price;
-                        }
-                    }
-                    else
-                    {
-                        sales.TotalPrice = x.Price;
-                    }
-
+                    #region Ödeme Modeline Bilgiler Set Ediliyor.                 
+                    sales.TotalPrice += x.Price * x.Quantity;
                     sales.PaymentType = "Kredi Kartı (Tek Çekim)";
                     sales.TotalQuantity += x.Quantity;
                     sales.UserCode = userId;

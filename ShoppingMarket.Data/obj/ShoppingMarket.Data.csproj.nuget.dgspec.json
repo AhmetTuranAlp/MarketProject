@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {}
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {
+    "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj",
+        "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj",
         "projectName": "ShoppingMarket.Data",
-        "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj",
+        "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\ShoppingMarket.Data.csproj",
         "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Data\\obj\\",
+        "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -9542,11 +9542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Api\\ShoppingMarket.Api.csproj",
+      "projectUniqueName": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Api\\ShoppingMarket.Api.csproj",
       "projectName": "ShoppingMarket.Api",
-      "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Api\\ShoppingMarket.Api.csproj",
+      "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Api\\ShoppingMarket.Api.csproj",
       "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Api\\obj\\",
+      "outputPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -9567,8 +9567,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\source\\repos\\ShoppingMarket\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj"
+            "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj": {
+              "projectPath": "D:\\Yazılım\\GitHup-Projeler\\MarketProject\\ShoppingMarket.Service\\ShoppingMarket.Service.csproj"
             }
           }
         }
