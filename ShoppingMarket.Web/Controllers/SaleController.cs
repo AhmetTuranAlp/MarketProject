@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShoppingMarket.Service.Base;
 
@@ -19,7 +20,9 @@ namespace ShoppingMarket.Web.Controllers
         }
         public IActionResult List()
         {
-            return View();
+            var userId = this.HttpContext.Session.GetString("UserId");
+            var basketDTO = _saleService.GetAll();
+            return View(basketDTO);
         }
     }
 }

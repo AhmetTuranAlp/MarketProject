@@ -270,7 +270,7 @@ function ProductDelete(e) {
 		baseClass: 'animated-super-fast save-confirm',
 		iconClass: false,
 		title: '<span>Ürün Silme</span>',
-		msg: '<span>Ürün Silinsin mi?</span>',
+		msg: '<span>Emin misiniz?</span>',
 		width: 350,
 		buttons: {
 			yes: { 'class': 'LBtn YesCheck dbtn btn-10', closeOnClick: false, text: 'EVET', closeOnClick: true },

@@ -60,7 +60,7 @@ function CompleteShopping(e) {
 							size: 'mini',
 							msg: "İşlem Başarılı"
 						});
-						setTimeout(function () { window.location.href = "/Product/List"; }, 3000);
+						setTimeout(function () { window.location.href = "/Sale/List"; }, 2000);
 					}
 					else {
 						Lobibox.notify('error', {
